@@ -1,0 +1,33 @@
+<html>
+
+<body>
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <div class="col-6">
+
+        <h2>Submit information to Spreadsheet</h2>
+
+        <form class="form mt-4" data-spreadsheet-api="https://sheet2api.com/v1/OBsUtEOyQpCN/test_database/Munkalap1">
+          <div class="form-group">
+            <input type="text" class="form-control mb-2" name="Name" placeholder="Name" />
+            <input type="text" class="form-control mb-2" name="Favourite Thing" placeholder="Favourite Thing" />
+            <input type="text" class="form-control mb-2" name="Image" placeholder="Image" />
+          </div>
+          <button type="submit" class="btn btn-primary" onClick="alert('Submitted')">Submit</button>
+        </form>
+
+      </div>
+      <div class="col-6">
+       <!--This code will list the contents of your Spreadsheet
+          Sheet "Munkalap1" onto the web page.-->
+         <div data-spreadsheet-api="https://sheet2api.com/v1/OBsUtEOyQpCN/test_database/Munkalap1">
+          <div><b>Név:</b>{{Név}}</div>
+          <div><b>Kor:</b>{{Kor}}</div>
+         </div>
+       <script src="https://sheet2api.com/v1/template.js"></script>
+      </div>
+    </div>
+
+</body>
+
+</html>

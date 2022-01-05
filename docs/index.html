@@ -14,7 +14,16 @@
           </div>
           <button type="submit" class="btn btn-primary" onClick="alert('Submitted')">Submit</button>
         </form>
-
+        <br>
+       <canvas id="canvas" width="5" height="5"></canvas>
+       <script>
+            var canvas = document.getElementById('canvas');
+            var dataURL = canvas.toDataURL();
+            console.log(dataURL);
+          // "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNby
+          // blAAAADElEQVQImWNgoBMAAABpAAFEI8ARAAAAAElFTkSuQmCC"
+       </script>
+       <br><br><br>
       </div>
       <div class="col-6">
        <!--This code will list the contents of your Spreadsheet
